@@ -1,0 +1,285 @@
+/* Add your CSS styles here */
+
+body {
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-image: url('background.png');
+    background-size: 100;
+    color: #fff;
+}
+
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: 1000;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-around;
+}
+
+nav ul li {
+    margin: 0;
+}
+
+nav ul li a {
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    color: #fff;
+    transition: all 0.3s ease;
+}
+
+nav ul li a:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+header {
+    text-align: center;
+    padding: 80px 0 20px;
+}
+
+header img {
+    width: 100px;
+    height: 100px;
+}
+
+h1 {
+    margin-top: 10px;
+}
+
+main {
+    padding-top: 20px;
+}
+
+section {
+    text-align: center;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.7);
+    border-radius: 10px;
+    max-width: 800px;
+    position: relative;
+    backdrop-filter: blur(8px); /* Apply Gaussian blur to the background */
+}
+
+section:not(:last-child) {
+    margin-bottom: 20px;
+}
+
+section h2 {
+    margin-bottom: 20px;
+}
+
+button {
+    padding: 15px 30px;
+    background-color: #f44336;
+    border: none;
+    color: #fff;
+    font-size: 20px;
+    cursor: pointer;
+    border-radius: 10px;
+    transition: background-color 0.3s ease;
+    outline: auto
+}
+
+button:hover {
+    background-color: #d32f2f;
+    transform: scale(1.05);
+}
+
+#progressBar {
+    margin-top: 20px;
+    height: 20px;
+    background-color: #333;
+    border-radius: 10px;
+    overflow: hidden;
+    outline: auto
+}
+
+#progress {
+    height: 100%;
+    width: 0;
+    background-color: #f44336;
+    border-radius: 10px;
+}
+
+#progressText {
+    margin-top: 10px;
+    font-size: 18px;
+}
+
+.faq-header {
+    cursor: pointer;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.question {
+    margin-top: 20px;
+    font-size: 20px;
+}
+
+.answer {
+    margin-bottom: 20px;
+    font-size: 18px;
+    color: #ccc;
+}
+
+footer {
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 10px 0;
+}
+@keyframes modalAppear {
+    from {
+        opacity: 0;
+        transform: translateY(-50%);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Animation for countdown */
+@keyframes countdownAppear {
+    from {
+        opacity: 0;
+        transform: scale(0.8);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+/* Carousel styles */
+.carousel {
+    display: flex;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+}
+
+.carousel img {
+    width: 100%;
+    scroll-snap-align: start;
+}
+
+/* Additional styles for contact form */
+#contactForm {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#contactForm input,
+#contactForm textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0;
+    border: none;
+    border-radius: 5px;
+}
+
+#contactForm button {
+    padding: 10px 20px;
+    background-color: #f44336;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+/* Modal styles */
+/* Add CSS for modals to make them full-screen */
+.modal {
+    display: none;
+    position: static; 
+    z-index: 999;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+.modal-content {
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 400px;
+    margin: 10% auto;
+    position: relative;
+    backdrop-filter: blur(8px); /* Apply Gaussian blur to the background */
+}
+
+/* Rest of the CSS remains unchanged */
+
+
+.close {
+    color: #fff;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.close:hover,
+.close:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+input[type="text"] {
+    width: calc(100% - 20px);
+    padding: 10px;
+    margin-top: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: rgba(255, 255, 255, 0.1);
+    color: #fff;
+    outline: none;
+}
+
+input[type="text"]::placeholder {
+    color: rgba(255, 255, 255, 0.5);
+}
+
+input[type="text"]:focus {
+    background-color: rgba(255, 255, 255, 0.3);
+}
+
+/* Animation */
+@keyframes slideIn {
+    from {
+        transform: translateY(-20px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes slideOut {
+    from {
+        transform: translateY(0);
+        opacity: 1;
+    }
+    to {
+        transform: translateY(-20px);
+        opacity: 0;
+    }
+}

